@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CPS Checker</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="CPS Check Application">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main_content">
+            <h1 id="CPS_check_title">CPS Checker</h1>
+            <button id="CPS_check_button">Click me :D</button>
+            <p id="CPS_check_totalcps">CPS: 0</p>
+            <p id="CPS_check_hotkey_display">Mouse Click: Left</p>
+            <button id="CPS_check_hotkeychanger" onclick="changehotkey(); event.stopPropagation()">Change Hotkey</button>
+            <div id="CPS_check_DPGKCutscene1" hidden></div>
+            <video src="video1.mp4" id ="CPS_check_DPGKCutscene2" autoplay muted width="1430" height="890" hidden></video>
+        </div>
+        <div id="snow-container"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

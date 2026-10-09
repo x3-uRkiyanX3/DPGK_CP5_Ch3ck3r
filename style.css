@@ -1,0 +1,145 @@
+body{
+    background-color: #1c1c1c;
+    overflow: hidden;
+}
+
+.main_content{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#CPS_check_title{
+    position: absolute;
+    color: #FFFFFF;
+}
+
+#CPS_check_button{
+    position: absolute;
+    top: 100px;
+    font-size: 50px;
+    width: 300px;
+    height: 250px;
+    outline: solid 4px #b7fff9;
+    transition: .4s;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+
+#CPS_check_button:hover{
+    animation: 2s rainbow_text linear infinite;
+}
+
+#CPS_check_button:active{
+    transform: translate(0px, 6px);
+}
+
+#CPS_check_totalcps{
+    color: #FFFFFF;
+    position: absolute;
+    top: 350px;
+    font-size: 80px;
+}
+
+#snow-container {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.snow {
+    position: absolute;
+    top: -50px;
+    color: white;
+    animation: snow-fall linear infinite;
+}
+
+@keyframes snow-fall{
+    0%{
+        transform: translateY(-50px) translateX(0) rotate(0deg);
+    }
+
+    100%{
+        transform: translateY(110vh) translateX(var(--sway)) rotate(var(--rotation));
+    }
+}
+
+#CPS_check_DPGKCutscene1 {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    animation: 0.5s rainbow_border linear infinite;
+    z-index: -1;
+}
+
+@keyframes rainbow_border{
+    0%{background: radial-gradient(circle, transparent 20%, rgba(255, 0, 0, 0.05) 45%, rgba(255, 0, 0, 0.3) 100%)}
+    14%{background: radial-gradient(circle, transparent 20%, rgba(243, 152, 0, 0.05) 45%, rgba(243, 152, 0, 0.3) 100%)}
+    28%{background: radial-gradient(circle, transparent 20%, rgba(255, 241, 0, 0.05) 45%, rgba(255, 241, 0, 0.3) 100%)}
+    42%{background: radial-gradient(circle, transparent 20%, rgba(0, 153, 68, 0.05) 45%, rgba(0, 153, 68, 0.3) 100%)}
+    56%{background: radial-gradient(circle, transparent 20%, rgba(0, 104, 183, 0.05) 45%, rgba(0, 104, 183, 0.3) 100%)}
+    70%{background: radial-gradient(circle, transparent 20%, rgba(29, 32, 136, 0.05) 45%, rgba(29, 32, 136, 0.3) 100%)}
+    85%{background: radial-gradient(circle, transparent 20%, rgba(182, 3, 164, 0.05) 45%, rgba(182, 3, 164, 0.3) 100%)}
+    100%{background: radial-gradient(circle, transparent 20%, rgba(255, 0, 0, 0.05) 45%, rgba(255, 0, 0, 0.3) 100%)}
+}
+
+@keyframes border_size{
+    0%{color : #e60000}
+    14%{color: #f39800}
+    28%{color: #fff100}
+    42%{color: #009944}
+    56%{color: #0068b7}
+    70%{color: #1d2088}
+    85%{color: #b603a4}
+    100%{color: #e60000}
+    0%{outline: solid 4px #e60000;}
+    14%{outline: solid 8px #f39800;}
+    28%{outline: solid 16px #fff100;}
+    42%{outline: solid 32px #009944;}
+    56%{outline: solid 64px #0068b7;}
+    70%{outline: solid 32px #1d2088;}
+    85%{outline: solid 16px #b603a4;}
+    100%{outline: solid 8px #e60000;}
+}
+
+@keyframes rainbow_outline{
+    0%{outline : solid 4px #e60000}
+    14%{outline : solid 4px #f39800}
+    28%{outline : solid 4px #fff100}
+    42%{outline : solid 4px #009944}
+    56%{outline : solid 4px #0068b7}
+    70%{outline : solid 4px #1d2088}
+    85%{outline : solid 4px #b603a4}
+    100%{outline : solid 4px #e60000}
+}
+
+#CPS_check_hotkey_display{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#CPS_check_hotkeychanger{
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    font-size: 18px;
+    width: 150px;
+    height: 45px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    outline: solid 4px #b7fff9;
+    transition: .4s;  
+}
+
+#CPS_check_DPGKCutscene2{
+    top: -50px;
+    position: absolute;
+    z-index: -1;
+}
